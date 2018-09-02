@@ -11,7 +11,11 @@
             <textarea class="form-control" id="body" name="body"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary mb-2">Create Task</button>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mb-2">Create Task</button>
+        </div>
+
+        @include('layouts.messages')
     </form>
     
 @endsection
