@@ -24,6 +24,7 @@ class PostsController extends Controller
     
     public function store(Request $request)
     {
+        // Populates global variable $errors - See: messages.blade.layout
         $this->validate(request(), [
             'title' => 'required',
             'intro' => 'required'
