@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     {{-- Blog Template CSS --}}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/blog.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/app.scss') }}">
     <title>Laracasts</title>
 </head>
 <body>
