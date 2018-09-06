@@ -7,8 +7,8 @@ use Carbon\Carbon;
 
 class Model extends Eloquent
 {
-    // // Currently all input is accepted.
-    // protected $guarded = [];
+    // Currently all input is accepted.
+    protected $guarded = [];
 
     // // Converts created_at to a nice format.
     // public function getCreatedAtAttribute($date)
