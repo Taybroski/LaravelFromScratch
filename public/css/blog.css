@@ -1,3 +1,10 @@
+.mh-25 {
+  max-height: 3.1rem;
+}
+.bb-s1 {
+  border-bottom: 1.2px solid #e5e5e5;
+}
+
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
