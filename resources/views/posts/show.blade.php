@@ -20,7 +20,7 @@
             </ul>
         </div>
 
-        <form method="POST" action="/comments">
+        <form method="POST" action="/posts/{{ $post->id }}/comments">
 
             {{ csrf_field() }}
 
@@ -31,6 +31,7 @@
                 <button type="submit" class="btn btn-primary">Leave Reply</button>
             </div>
         </form>
+        @include('layouts.messages') {{-- Displays error messages --}}
     </div>
 
     <a href="/posts">Back</a>

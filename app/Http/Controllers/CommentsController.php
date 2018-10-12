@@ -3,34 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Comment;
 use App\Post;
+use App\Comment;
 
 class CommentsController extends Controller
 {
 
-    public function index()
+    public function store(Post $post)
     {
-        //
-    }
-
-    public function create()
-    {
-        //
-    }
-
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'body' => 'required'
-        ]);
-
-        Comment::create(['body', 'post_id' => Post::find('id')]);
-    }
-
-    public function show($id)
-    {
-        //
+        $this->validate(request(), [ 'body' => 'required|min:2' ]);
+        $post->addComment(request('body'));
+        // Comment::create(request(['body', 'post_id']));
+        return back();
     }
 
     public function edit($id)

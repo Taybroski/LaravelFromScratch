@@ -2,12 +2,22 @@
 
 @section('content')
     
-    @if (count($posts) > 0)
-        <ul class="list-group">
+    <div class="blog-post">
+        <h3>Latest Posts</h3>
+        <hr>
+        <br>
+        @if (count($posts) > 0)
             @foreach ($posts as $post)
-                <a href="/posts/{{ $post->id }}"><li class="list-group-item">{{ $post->body }}</li></a>
+                <ul class="list-group">
+                    <li class="zlist-group-item">
+                        <a href="/posts/{{ $post->id }}">
+                            <h5>{{ $post->title }}</h5>
+                        </a>
+                        <p>{{ $post->intro }}</p>
+                    </li>
+                </ul>
             @endforeach
-        </ul>
-    @endif
-
+        @endif
+    </div>
+        
 @endsection
