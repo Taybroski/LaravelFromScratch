@@ -18,12 +18,14 @@
 </header>
 
 <div class="container">
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex">
-      <a class="p-2 text-muted" href="/posts">Blog</a>
-      <a class="p-2 text-muted" href="/tasks">Tasks</a>
-      <a class="p-2 text-muted" href="/posts/create">New Post</a>
-      <a class="p-2 text-muted" href="/tasks/create">New Task</a>
-    </nav>
+  <div class="bb-s1 mh-25 mb-sm-3">
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex">
+        <a class="p-2 text-muted" href="/posts">Blog</a>
+        <a class="p-2 text-muted" href="/tasks">Tasks</a>
+        <a class="p-2 text-muted" href="/posts/create">New Post</a>
+        <a class="p-2 text-muted" href="/tasks/create">New Task</a>
+      </nav>
+    </div>
   </div>
 </div>
