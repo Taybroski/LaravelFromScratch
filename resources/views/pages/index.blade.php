@@ -3,21 +3,17 @@
 @section('content')
     
     <div class="blog-post">
-        <h3>Latest Posts</h3>
+        <div class="flex-row">
+            <h3>Latest Post</h3><small class="pl-2"><a href="/posts">See all >></a></small>
+        </div>
         <hr>
         <br>
-        @if (count($posts) > 0)
-            @foreach ($posts as $post)
-                <ul class="list-group">
-                    <li class="zlist-group-item">
-                        <a href="/posts/{{ $post->id }}">
-                            <h5>{{ $post->title }}</h5>
-                        </a>
-                        <p>{{ $post->intro }}</p>
-                    </li>
-                </ul>
-            @endforeach
-        @endif
+        <li class="list-group-item">
+            <a href="/posts/{{ $posts->first()->id }}">
+                <h5>{{ $posts->first()->title }}</h5>
+            </a>
+            <p>{{ $posts->first()->intro }}</p>
+        </li>
     </div>
         
 @endsection

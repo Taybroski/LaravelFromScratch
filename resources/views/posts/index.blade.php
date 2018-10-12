@@ -15,7 +15,7 @@
                     <p>{{ str_limit($post->body, $limit = 250, $end = '...') }}<a href="/posts/{{ $post->id }}">Continue Reading</a></p>
                     <h4>{{ $post->sub_heading }}</h4>
                     <p>{{ str_limit($post->body, $limit = 125, $end = '...') }}</p>
-                    <hr>
+                    <br>
                 </div>
             @endforeach
         @endif

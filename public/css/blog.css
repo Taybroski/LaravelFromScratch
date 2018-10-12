@@ -4,6 +4,14 @@
 .bb-s1 {
   border-bottom: 1.2px solid #e5e5e5;
 }
+.pl-2 {
+  padding-left: 2rem;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 /* stylelint-disable selector-list-comma-newline-after */
 
